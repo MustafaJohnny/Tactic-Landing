@@ -7,15 +7,18 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
+  height: 100vh;
   color: #27272a;
   font-weight: 400;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  background-color: #f5f5fa;
   position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #f5f5fa;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -568,15 +571,13 @@ img {
   justify-content: center;
   gap: 1rem;
   z-index: -1;
-  bottom: 71%;
-  left: -8%;
-  transform: translate(50%, 50%);
+  transform: translate(28%, -200%);
   border-radius: 10px;
-  background: linear-gradient(212.74deg, #f8506d 19.34%, #f97d48 81.59%);
-  box-shadow: 0px 4px 15px -2px rgba(50, 50, 71, 0.15);
   width: 50rem;
   height: 20.5rem;
   padding: 12rem 5rem;
+  box-shadow: 0px 4px 15px -2px rgba(50, 50, 71, 0.15);
+  background: linear-gradient(212.74deg, #f8506d 19.34%, #f97d48 81.59%);
 }
 
 .hotelHeading {
@@ -881,8 +882,8 @@ img {
 .foterLink {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #fafafa;
-  font-weight: 400;
+  color: #fafafa !important;
+  font-weight: 400 !important;
   transition: all 0.5s;
   cursor: pointer !important;
 }
@@ -1206,10 +1207,6 @@ td {
   .socialIcon {
     width: 1.5vw !important;
   }
-
-  .hotelCard {
-    bottom: 68%;
-  }
 }
 
 @media (max-width: 120em) {
@@ -1281,10 +1278,6 @@ td {
     bottom: 24%;
   }
 
-  .hotelCard {
-    bottom: 73%;
-  }
-
   .footerIcons {
     width: 2vw !important;
   }
@@ -1300,10 +1293,6 @@ td {
 
   .dotsSVG {
     bottom: 24%;
-  }
-
-  .hotelCard {
-    bottom: 73%;
   }
 
   .productAboutHeading {
@@ -1338,10 +1327,6 @@ td {
 
   .dotsSVG {
     bottom: 31%;
-  }
-
-  .hotelCard {
-    bottom: 75%;
   }
 }
 
@@ -2080,7 +2065,7 @@ td {
   }
 
   .footerContainer {
-    gap: 10vw;
+    gap: 9vw;
     flex-direction: column;
     padding: 8.5vw 4.5vw 8.5vw 6vw;
   }
@@ -2090,6 +2075,7 @@ td {
     column-gap: 5vw;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    transform: translateY(3vw);
   }
 
   .logoAreaFooter {
@@ -2119,8 +2105,17 @@ td {
   }
 
   .foterLink {
-    font-size: 3.2vw;
-    font-weight: 300;
+    font-size: 3.2vw !important;
+    color: #fafafa !important;
+    font-weight: 400 !important;
+  }
+
+  .movefoterLink {
+    transform: translate(0.5vw, -3vw) !important;
+  }
+
+  .movefoterLink2 {
+    transform: translate(0.5vw, -6.5vw) !important;
   }
 
   .foterLinkBig {
@@ -2163,7 +2158,7 @@ td {
     display: block;
     visibility: visible;
     pointer-events: all;
-    padding: 16vw 0vw 10vw 0vw;
+    padding: 18vw 0vw 10vw 0vw;
   }
 
   .productHeadingArea {
@@ -2346,5 +2341,9 @@ td {
 
   .open .iconAC {
     transform: rotate(270deg);
+  }
+
+  .logosFooterBox {
+    gap: 4vw;
   }
 }

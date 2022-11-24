@@ -808,6 +808,7 @@ img {
   text-align: center;
   font-weight: 500;
   font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 
 .fifthImgBox {
@@ -1597,6 +1598,11 @@ td {
     font-size: 1.6rem;
   }
 
+  .section5Img {
+    width: 110%;
+    transform: translateX(-4vw);
+  }
+
   .sectionHero {
     padding-top: 17vw;
     padding-bottom: 2vw;
@@ -1658,7 +1664,7 @@ td {
 
   .innoLine2 {
     border-bottom: 4px solid #f43f5de5;
-    padding-bottom: 4.2rem;
+    padding-bottom: 4.6rem;
   }
 
   .heroText {
@@ -1741,14 +1747,15 @@ td {
   }
 
   .checkmarkIcons {
-    width: 5vw;
-    height: 5vw;
+    width: 5.2vw;
+    height: 5.2vw;
+    transform: translateX(-0.3vw);
   }
 
   .checkmarkIcons2 {
-    width: 5vw;
-    height: 5vw;
-    transform: translateY(-6vw);
+    width: 5.2vw;
+    height: 5.2vw;
+    transform: translate(-0.3vw, -6vw);
   }
 
   .checkmarkIconsPhone {

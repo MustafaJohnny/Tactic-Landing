@@ -443,6 +443,21 @@ img {
   gap: 7rem;
 }
 
+.checkmarkIcons {
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+}
+
+.checkmarkIcons2 {
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  transform: translateY(-1.4rem);
+}
+
 .wholeFeature {
   gap: 1rem;
   z-index: 1;
@@ -477,8 +492,12 @@ img {
 .iconBack {
   background-color: #fdf2e9;
   box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-  padding: 2rem;
-  border-radius: 200%;
+  border-radius: 100%;
+  width: 7.2rem;
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondSection {
@@ -540,23 +559,12 @@ img {
   position: relative;
 }
 
-.listIcon {
-  width: 1.6vw !important;
-}
-
-.listIcon2 {
-  width: 2.8vw;
-}
-
 .secListText {
   color: #fafafa;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 3.2rem;
-}
-
-.listIconMove {
-  transform: translateY(-1.3rem);
+  margin-left: 4.2rem;
 }
 
 /***/
@@ -684,10 +692,18 @@ img {
 }
 
 .forthSecTextBox {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+  display: flex;
   gap: 3rem;
+}
+
+.forthSecTextBoxWidth1 {
+  width: 80% !important;
+}
+
+.forthSecTextBoxWidth2 {
+  width: 90%;
 }
 
 .middel {
@@ -710,7 +726,7 @@ img {
 .forthWholeList {
   color: #27272a;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 3rem;
 }
 
@@ -1177,10 +1193,6 @@ td {
 @media (min-width: 140em) {
   .svgg {
     width: 2vw !important;
-  }
-
-  .listIcon2 {
-    width: 3vw;
   }
 
   .heroText {
@@ -1715,7 +1727,8 @@ td {
   }
 
   .iconBack {
-    padding: 5vw;
+    width: 17vw;
+    height: 17vw;
   }
 
   .secondSection {
@@ -1727,9 +1740,32 @@ td {
     width: 100%;
   }
 
+  .checkmarkIcons {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .checkmarkIcons2 {
+    width: 5vw;
+    height: 5vw;
+    transform: translateY(-6vw);
+  }
+
+  .checkmarkIconsPhone {
+    transform: translateY(-3vw);
+  }
+
   .sectionTwoContent {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .forthSecTextBoxWidth1 {
+    width: 90% !important;
+  }
+
+  .forthSecTextBoxWidth2 {
+    width: 100%;
   }
 
   .wholeTextContet {
@@ -1751,41 +1787,25 @@ td {
   }
 
   .section2Text {
-    font-size: 3.4vw;
+    font-size: 3.6vw;
     line-height: 6vw;
   }
 
   .section2ListArea {
-    gap: 3vw;
+    gap: 4vw;
   }
 
   .SecWholeList {
     display: flex;
     align-items: center;
-    gap: 3vw;
+    gap: 1vw;
     position: relative;
   }
 
-  .listIcon {
-    width: 5vw !important;
-  }
-
-  .listIcon2 {
-    width: 11vw !important;
-  }
-
   .secListText {
-    font-size: 3.4vw;
+    font-size: 4vw;
     line-height: 6vw;
-  }
-
-  .listIconMove {
-    transform: translateY(-8rem);
-  }
-
-  .moveIt {
-    transform: translateY(-4rem);
-    width: 5.5vw !important;
+    margin-left: 7vw;
   }
 
   /**/

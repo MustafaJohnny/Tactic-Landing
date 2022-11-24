@@ -1,5 +1,14 @@
 "use strict";
 
+const logoBtn = document.querySelectorAll(".logoArea");
+const heroSection = document.querySelector(".sectionHero");
+
+logoBtn.forEach((oneBtn) => {
+  oneBtn.addEventListener("click", () => {
+    heroSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
